@@ -4,8 +4,6 @@ A simple yet stylish web application that transforms your photos into cartoon-st
 
 ![Cartoon Demo](./assets/logo.png)
 
----
-
 ## Features
 
 - 📷 Upload your own photo  
@@ -14,8 +12,6 @@ A simple yet stylish web application that transforms your photos into cartoon-st
 - 🌫️ Glassmorphism UI with smooth interactions  
 - 📥 Download cartoon image in PNG / JPEG / WEBP  
 
----
-
 ## Tech Stack
 
 | Frontend | Backend | Others        |
@@ -23,31 +19,14 @@ A simple yet stylish web application that transforms your photos into cartoon-st
 | React    | FastAPI | OpenCV (cv2)  |
 | Axios    | Python  | CSS Animations|
 
----
-
-## Project Structure
-
-cartoon-app/
-├── backend/ # FastAPI backend
-│ └── main.py # Main backend API
-├── frontend/ # React frontend
-│ ├── public/
-│ └── src/
-│ ├── App.js
-│ ├── App.css
-│ └── logo.svg
-
----
-
-## Setup Instructions
-**Backend**
+## Backend Instructions
 
 ```bash
 cd backend
 pip install fastapi uvicorn opencv-python python-multipart
 uvicorn main:app --reload
 
-**Frontend**
+## Frontend Instructions
 
 ```bash
 cd frontend
