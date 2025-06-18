@@ -23,10 +23,11 @@ function App() {
     const formData = new FormData();
     formData.append("file", selectedImage);
 
+    const API_BASE = process.env.REACT_APP_API_BASE_URL;
     const response = await axios.post(
-      ` http://127.0.0.1:8000/cartoon?format=${format}`, 
-      formData, 
-      {responseType: "blob",}
+      `${API_BASE}/cartoon?format=${format}`,
+      formData,
+      { responseType: "blob" }
     );
 
     const cartoonBlob = new Blob([response.data], { type: `image/${format}` });
