@@ -6,6 +6,7 @@ A simple yet stylish web application that transforms your photos into cartoon-st
 
 ## ✨ Features
 
+
 - 📷 Upload your own photo  
 - 🌀 Applies **Gaussian blur + edge detection** to cartoonify images  
 - 🎇 Firework animation on result generation  
@@ -14,10 +15,12 @@ A simple yet stylish web application that transforms your photos into cartoon-st
 
 ## 🛠️ Tech Stack
 
+
 | Frontend     | Backend    | Others         |
 |--------------|------------|----------------|
 | React        | FastAPI    | OpenCV (cv2)   |
 | Axios        | Python     | CSS Animations |
+
 
 ## 🚀 How to Run the Project
 
