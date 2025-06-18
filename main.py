@@ -7,9 +7,10 @@ import io
 
 app = FastAPI()
 
+# 接受来自前端的跨域请求
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "https://localhost:3000", "http://192.168.0.4:3000", "https://cartoonifyapp.onrender.com"],
+    allow_origins=["http://localhost:3000", "https://localhost:3000", "http://192.168.0.4:3000", "https://cartoonify-ui.onrender.com"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"]

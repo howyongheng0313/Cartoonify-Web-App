@@ -23,6 +23,7 @@ function App() {
     const formData = new FormData();
     formData.append("file", selectedImage);
 
+    // 发送请求到后端API
     const API_BASE = process.env.REACT_APP_API_BASE_URL;
     const response = await axios.post(
       `${API_BASE}/cartoon?format=${format}`,
